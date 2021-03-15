@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------------- */
+/* STYLE MENU START */
+/* ---------------- */
+
+
+.navbar-nav a.nav-link{
+    margin: 0 10px;
+}
+
+@media (min-width: 1024px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+/* ---------------- */
+/* STYLE MENU END   */
+/* ---------------- */
+
+
+
+
+
+/* ---------------- */
+/* HEADER     START   */
+/* ---------------- */
+
+
+
+header {
+    padding: 10px;
+}
+
+header .container div {
+    margin: 5px 0;
+}
+
+header .logo img {
+    max-width: 100%;
+}
+
+header .socials {
+        font-size: 26px;
+}
+header .data i {
+    font-size: 20px;
+    margin-right: 6px;
+}
+
+header .container .row:first-of-type {
+    /* border-bottom: 1px dotted rgb(48, 48, 48); */
+}
+
+@media (min-width: 1024px) {
+    header .logo {
+        order: 2;
+    }
+    header .socials {
+        order: 3;
+    }
+    header .container .row:first-child {
+        align-items: center;
+    }   
+}
+/* ---------------- */
+/* HEADER     END   */
+/* ---------------- */
+
+/* HERO START */
+
+section.hero {
+    background-image: url(../img/leaf-1001679_1920.jpg);
+    background-size: cover;
+    min-height: 600px;
+}
+
+/* HERO END */
