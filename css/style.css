@@ -3,91 +3,159 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+    min-height: 200vh;
+}
+
+
+span.green {
+    color: #198712;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------- */
+/* HEADER     START   */
+/* ---------------- */
+
 .header-banner i {
-  transition: 0.2s;
-}
-
-.header-banner a {
-  text-decoration: none;
-  color: white;
-}
-
-.header-banner a:hover i {
-  transform: scale(1.1);
-}
-
-.header-banner {
-  padding: 15px 0;
-}
-.header-banner div {
-  margin: 4px auto;
-}
-
-.header-banner .address {
-  margin-top: 0;
-}
-.header-banner .socials {
-  margin-bottom: 0;
-}
-
-/* .phone,
-.phone i {
-  font-size: 12px;
-}
-
-.email,
-.email i {
-  font-size: 12px;
-} */
-
-header .socials {
-  font-size: 26px;
-}
-
-.data {
-  align-items: center;
-}
-
-.data i {
-  font-size: 20px;
-  margin-right: 6px;
-}
-
-@media (min-width: 640px) {
-  .phone,
-  .phone i {
-    font-size: 16px;
+    transition: 0.2s;
   }
-
-  .email,
-  .email i {
-    font-size: 16px;
+  
+  .header-banner a {
+    text-decoration: none;
+    color: white;
   }
-}
-
-@media (min-width: 768px) {
+  
+  .header-banner a:hover i {
+    transform: scale(1.1);
+  }
+  
+  .header-banner {
+    padding: 15px 0;
+  }
+  .header-banner div {
+    margin: 4px auto;
+  }
+  
   .header-banner .address {
-    margin-top: 4px;
+    margin-top: 0;
   }
-
-}
-
-@media (min-width: 1024px) {
-  .phone,
+  .header-banner .socials {
+    margin-bottom: 0;
+  }
+  
+  /* .phone,
   .phone i {
-    font-size: 16px;
+    font-size: 12px;
   }
-
+  
   .email,
   .email i {
-    font-size: 16px;
+    font-size: 12px;
+  } */
+  
+  header .socials {
+    font-size: 26px;
   }
-  .address,
-  .address i {
-    font-size: 16px;
+  
+  .data {
+    align-items: center;
   }
+  
+  .data i {
+    font-size: 20px;
+    margin-right: 6px;
+  }
+  
+  @media (min-width: 640px) {
+    .phone,
+    .phone i {
+      font-size: 16px;
+    }
+  
+    .email,
+    .email i {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .header-banner .address {
+      margin-top: 4px;
+    }
+  
+  }
+  
+  @media (min-width: 1024px) {
+    .phone,
+    .phone i {
+      font-size: 16px;
+    }
+  
+    .email,
+    .email i {
+      font-size: 16px;
+    }
+    .address,
+    .address i {
+      font-size: 16px;
+    }
+  
+  }
+  
+  
 
-}
+/* ---------------- */
+/* HEADER     END   */
+/* ---------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---------------- */
 /* STYLE MENU START */
@@ -166,34 +234,65 @@ header .socials {
 /* STYLE MENU END   */
 /* ---------------- */
 
-/* ---------------- */
-/* HEADER     START   */
-/* ---------------- */
 
-/* ---------------- */
-/* HEADER     END   */
-/* ---------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* HERO START */
 
 section.hero {
-  background-image: url(../img/forest-4945407_1920.jpg);
+
   background-position: center;
   background-size: cover;
   min-height: 740px;
   position: relative;
+  animation: bg-animate 60s infinite linear;
+    background-image: url(../img/forest-4945407_1920.jpg);
 }
 
 section.hero div {
   position: absolute;
   top: 4rem;
-  bottom: 8rem;
+  /* bottom: 8rem; */
   margin: 0 auto;
   left: 50%;
   transform: translateX(-50%);
   padding: 30px 15px;
   width: 320px;
-  background-color: #1a8712bb;
+  background-color: #0e6b07dc;
   /* border-radius: 5px; */
 }
 
@@ -240,3 +339,131 @@ section.hero .phone-btn {
 
 
 /* HERO END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FEATURES START */
+
+section.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.feature {
+  transform: translateY(-50%);
+}
+
+
+.feature {
+    width: 300px;
+    padding: 15px 20px;
+    background-color: #198712;
+    color: white;
+    margin: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.feature i {
+    font-size: 60px;
+    margin: 10px 0 15px;
+    transition: .4s;
+}
+
+
+.feature:hover i {
+    transform: scale(1.1);
+
+}
+
+.feature:hover  {
+    background-color: #14970b;
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+    .feature {
+        margin: 0 35px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* FEATURES END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PELLET START */
+
+
+.pellet {
+    margin-top: -100px;
+}
+
+.pellet img {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PELLET END */
