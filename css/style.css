@@ -1,80 +1,175 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-banner i {
+  transition: 0.2s;
 }
 
+.header-banner a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-banner a:hover i {
+  transform: scale(1.1);
+}
+
+.header-banner {
+  padding: 15px 0;
+}
+.header-banner div {
+  margin: 4px auto;
+}
+
+.header-banner .address {
+  margin-top: 0;
+}
+.header-banner .socials {
+  margin-bottom: 0;
+}
+
+/* .phone,
+.phone i {
+  font-size: 12px;
+}
+
+.email,
+.email i {
+  font-size: 12px;
+} */
+
+header .socials {
+  font-size: 26px;
+}
+
+.data {
+  align-items: center;
+}
+
+.data i {
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+@media (min-width: 640px) {
+  .phone,
+  .phone i {
+    font-size: 16px;
+  }
+
+  .email,
+  .email i {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-banner .address {
+    margin-top: 4px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .phone,
+  .phone i {
+    font-size: 16px;
+  }
+
+  .email,
+  .email i {
+    font-size: 16px;
+  }
+  .address,
+  .address i {
+    font-size: 16px;
+  }
+
+}
 
 /* ---------------- */
 /* STYLE MENU START */
 /* ---------------- */
 
-
-.navbar-nav a.nav-link{
-    margin: 0 10px;
+.navbar-nav a.nav-link {
+  margin: 0 10px;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     .navbar-brand {
         display: none;
     }
+} */
+
+.logo {
+  max-width: 70%;
 }
 
+.navi {
+  position: relative;
+  padding: 15px;
+}
+
+.triangle {
+  position: absolute;
+  bottom: -29px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translateX(-50%);
+  border-top: 30px solid;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  z-index: 99999;
+}
+@media (max-width: 500px) {
+  .navbar-toggler {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .navbar-toggler {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar-toggler {
+      margin-left: 4rem;
+    }
+  }
+  
+
+@media (min-width: 992px) { 
+    .navbar-expand-lg, .navbar-collapse {
+        justify-content: center;
+    }
+    
+}
+
+
+@media (min-width: 1024px) {
+    .logo {
+        max-width: 85%;
+      }
+}
+
+@media (min-width: 375px) and (max-width: 420px) and (min-height: 760px) {
+    .navbar-toggler {
+        margin-left: 1rem;
+    }
+}
 /* ---------------- */
 /* STYLE MENU END   */
 /* ---------------- */
-
-
-
-
 
 /* ---------------- */
 /* HEADER     START   */
 /* ---------------- */
 
-
-
-header {
-    padding: 10px;
-}
-
-header .container div {
-    margin: 5px 0;
-}
-
-header .logo img {
-    max-width: 100%;
-}
-
-header .socials {
-        font-size: 26px;
-}
-header .data i {
-    font-size: 20px;
-    margin-right: 6px;
-}
-
-header .container .row:first-of-type {
-    /* border-bottom: 1px dotted rgb(48, 48, 48); */
-}
-
-@media (min-width: 768px) {
-    header .row {
-        justify-content: center;
-
-    }
-}
-@media (min-width: 1024px) {
-    header .logo {
-        order: 2;
-    }
-    header .socials {
-        order: 3;
-    }
-    header .container .row:first-child {
-        align-items: center;
-    }   
-}
 /* ---------------- */
 /* HEADER     END   */
 /* ---------------- */
@@ -82,9 +177,66 @@ header .container .row:first-of-type {
 /* HERO START */
 
 section.hero {
-    background-image: url(../img/leaf-1001679_1920.jpg);
-    background-size: cover;
-    min-height: 600px;
+  background-image: url(../img/forest-4945407_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 740px;
+  position: relative;
 }
+
+section.hero div {
+  position: absolute;
+  top: 4rem;
+  bottom: 8rem;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px 15px;
+  width: 320px;
+  background-color: #1a8712bb;
+  /* border-radius: 5px; */
+}
+
+section.hero div button,
+section.hero div button i {
+  transition: 0.2s;
+}
+section.hero div button:hover i,
+section.hero div button:hover {
+  color: white;
+}
+
+section.hero div button:hover {
+  background-color: transparent;
+}
+
+section.hero .phone-btn {
+        color: rgba(7, 92, 11, 0.884)
+}
+
+@media (min-width: 640px) {
+  section.hero div {
+    width: 500px;
+    padding: 30px 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  section.hero div {
+    width: 800px;
+    padding: 30px 25px;
+  }
+
+  section.hero div p {
+    width: 80%;
+    margin: 15px auto;
+    font-size: 18px;
+  }
+
+  section.hero div button {
+    margin: 40px 0;
+  }
+}
+
 
 /* HERO END */
