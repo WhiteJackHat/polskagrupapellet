@@ -28,3 +28,18 @@
         background-position: 0 0;
     }
  }
+
+ @keyframes btn-highlighted {
+     0% {
+         left: -30px; 
+     }
+
+     50% {
+         left: calc(100% + 30px);
+     }
+
+     100% {
+         left: -30px; 
+     }
+ } 
+
