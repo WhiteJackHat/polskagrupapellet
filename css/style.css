@@ -12,6 +12,25 @@ body {
   color: #198712;
 }
 
+
+.bold {
+  font-weight: bold;
+}
+
+ @media (min-width: 768px) {
+   p {
+     font-size: 1.3rem;
+   }
+ }
+
+
+
+
+
+
+
+
+
 /* ---------------- */
 /* HEADER     START   */
 /* ---------------- */
@@ -227,7 +246,9 @@ section.hero .phone-btn {
   }
 }
 
-@media (min-width: 1024px) {
+
+
+@media (min-width: 992px) {
   section.hero div {
     width: 800px;
     padding: 30px 25px;
@@ -236,7 +257,7 @@ section.hero .phone-btn {
   section.hero div p {
     width: 80%;
     margin: 15px auto;
-    font-size: 18px;
+    font-size: 1.25rem;
   }
 
   section.hero div button {
@@ -283,9 +304,32 @@ section.features {
   background-color: #14970b;
 }
 
+
+@media (min-width: 768px) {
+  .feature {
+    transform: translateY(-20%)
+  }
+}
+
+@media (min-width: 992px) {
+  .feature {
+    transform: translateY(-35%)
+  }
+
+  .feature p {
+    font-size: 1.10rem;
+  }
+}
+
 @media (min-width: 1200px) {
   .feature {
     margin: 0 35px;
+    width: 320px;
+    padding: 10px 25px 15px;
+  }
+
+  .feature p {
+    font-size: 1.05rem;
   }
 }
 
@@ -340,6 +384,9 @@ section.features {
 }
 
 @media (min-width: 768px) {
+  .pellet {
+    margin-top: -60px;
+  }
   .pellet h2 {
     font-size: 2.3rem;
   }
@@ -352,6 +399,9 @@ section.features {
 }
 
 @media (min-width: 992px) {
+  .pellet {
+    margin-top: -130px;
+  }
   .pellet .graphic,
   .pellet .description {
     display: flex;
@@ -366,6 +416,21 @@ section.features {
   }
 }
 
+
+@media (min-width: 1200px) {
+  .pellet {
+    margin-top: -60px;
+  }
+
+
+  .pellet-main .highlighted  {
+    margin-top: 15px;
+  }
+
+  .pellet-main .highlighted-effect {
+    margin-top: 50px;
+  }
+}
 /* PARAMETERS */
 
 .parameters {
@@ -382,7 +447,7 @@ section.features {
 .parameters p {
   padding: 0 20px;
   font-weight: 600;
-  font-size: 1.15rem;
+  font-size: 1.15rem !important;
 }
 
 .parameters .advantages {
@@ -392,6 +457,11 @@ section.features {
 .advantages ul {
   padding: 0;
 }
+
+.parameters-btn .btn:hover {
+  background-color: #14970b;
+}
+
 @media (min-width: 768px) {
   .parameters p {
     font-size: 1.3rem;
@@ -415,6 +485,9 @@ section.features {
     /* order: 0; */
     align-self: center;
     margin: 25px auto;
+  }
+
+  .parameters-btn .btn {
     font-size: 1.3rem;
   }
   .parameters .advantages {
@@ -427,13 +500,84 @@ section.features {
   .parameters .advantages {
     margin: 80px auto 30px;
   }
+
+  .parameters-btn .btn {
+    font-size: 1.6rem;
+    padding: 10px 25px;
+  }
+
+  .parameters-btn .btn i {
+    margin-right: 3px;
+  }
 }
 /* PELLET END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* DELIVERY START */
 
 .delivery {
-  height: 600px;
+  padding: 25px 15px;
+  color: white;
 }
 
+.delivery-icon i {
+  margin: 15px 0;
+  font-size: 150px;
+
+}
+
+@media (min-width: 1200px) {
+  .delivery-icon i {
+    font-size: 220px;
+  }
+
+  .delivery-desc {
+    align-self: center;
+  }
+}
 /* DELIVERY END */
+
+
+
+
+
+
+
+
+
+
+/* PARTNERS START */
+
+.partners {
+  margin-top: 15px;
+}
+
+.partners img {
+  max-width: 95%;
+}
+
+.partners .partner {
+  align-self: center;
+}
+
+@media (min-width: 1200px) {
+  .parters .partner:first-of-type {
+    order: 3;
+  }
+}
+/* PARTNERS END */
