@@ -12,24 +12,15 @@ body {
   color: #198712;
 }
 
-
 .bold {
   font-weight: bold;
 }
 
- @media (min-width: 768px) {
-   p {
-     font-size: 1.3rem;
-   }
- }
-
-
-
-
-
-
-
-
+@media (min-width: 768px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
 
 /* ---------------- */
 /* HEADER     START   */
@@ -246,8 +237,6 @@ section.hero .phone-btn {
   }
 }
 
-
-
 @media (min-width: 992px) {
   section.hero div {
     width: 800px;
@@ -277,7 +266,7 @@ section.features {
 }
 
 .feature {
-  transform: translateY(-50%);
+  transform: translateY(-40%);
 }
 
 .feature {
@@ -304,20 +293,25 @@ section.features {
   background-color: #14970b;
 }
 
+@media (min-width: 640px) {
+  .feature {
+    transform: translateY(-50%);
+  }
+}
 
 @media (min-width: 768px) {
   .feature {
-    transform: translateY(-20%)
+    transform: translateY(-20%);
   }
 }
 
 @media (min-width: 992px) {
   .feature {
-    transform: translateY(-35%)
+    transform: translateY(-35%);
   }
 
   .feature p {
-    font-size: 1.10rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -416,14 +410,12 @@ section.features {
   }
 }
 
-
 @media (min-width: 1200px) {
   .pellet {
     margin-top: -60px;
   }
 
-
-  .pellet-main .highlighted  {
+  .pellet-main .highlighted {
     margin-top: 15px;
   }
 
@@ -495,7 +487,6 @@ section.features {
   }
 }
 
-
 @media (min-width: 1360px) {
   .parameters .advantages {
     margin: 80px auto 30px;
@@ -512,22 +503,6 @@ section.features {
 }
 /* PELLET END */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* DELIVERY START */
 
 .delivery {
@@ -538,7 +513,6 @@ section.features {
 .delivery-icon i {
   margin: 15px 0;
   font-size: 150px;
-
 }
 
 @media (min-width: 1200px) {
@@ -551,15 +525,6 @@ section.features {
   }
 }
 /* DELIVERY END */
-
-
-
-
-
-
-
-
-
 
 /* PARTNERS START */
 
