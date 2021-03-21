@@ -516,6 +516,9 @@ section.features {
 }
 
 @media (min-width: 1200px) {
+  .delivery {
+    padding: 40px 15px;
+  }
   .delivery-icon i {
     font-size: 220px;
   }
@@ -540,9 +543,5 @@ section.features {
   align-self: center;
 }
 
-@media (min-width: 1200px) {
-  .parters .partner:first-of-type {
-    order: 3;
-  }
-}
+
 /* PARTNERS END */
