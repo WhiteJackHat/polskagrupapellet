@@ -782,6 +782,7 @@ footer .mail a {
   background-position: center 0;
   /* margin: 40px auto; */
   padding: 40px 0;
+  animation: bg-animate 60s infinite linear;
 }
 
 @media (min-width: 640px) {
