@@ -5,7 +5,8 @@
 }
 
 body {
-  min-height: 500vh;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .green {
@@ -14,6 +15,10 @@ body {
 
 .bold {
   font-weight: bold;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -42,6 +47,7 @@ body {
 .header-banner {
   padding: 15px 0;
 }
+
 .header-banner div {
   margin: 4px auto;
 }
@@ -49,6 +55,7 @@ body {
 .header-banner .address {
   margin-top: 0;
 }
+
 .header-banner .socials {
   margin-bottom: 0;
 }
@@ -77,6 +84,7 @@ header .socials {
 }
 
 @media (min-width: 640px) {
+
   .phone,
   .phone i {
     font-size: 16px;
@@ -95,6 +103,7 @@ header .socials {
 }
 
 @media (min-width: 1024px) {
+
   .phone,
   .phone i {
     font-size: 16px;
@@ -104,6 +113,7 @@ header .socials {
   .email i {
     font-size: 16px;
   }
+
   .address,
   .address i {
     font-size: 16px;
@@ -117,6 +127,10 @@ header .socials {
 /* ---------------- */
 /* STYLE MENU START */
 /* ---------------- */
+
+.navbar-nav {
+  padding-top: 10px;
+}
 
 .navbar-nav a.nav-link {
   margin: 0 10px;
@@ -149,6 +163,7 @@ header .socials {
   border-right: 50px solid transparent;
   z-index: 99999;
 }
+
 @media (max-width: 500px) {
   .navbar-toggler {
     margin-left: 0;
@@ -168,6 +183,7 @@ header .socials {
 }
 
 @media (min-width: 992px) {
+
   .navbar-expand-lg,
   .navbar-collapse {
     justify-content: center;
@@ -185,9 +201,36 @@ header .socials {
     margin-left: 1rem;
   }
 }
+
 /* ---------------- */
 /* STYLE MENU END   */
 /* ---------------- */
+
+
+
+
+/* ***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+********************************
+*/
+
+
+
+
+
 
 /* HERO START */
 
@@ -197,7 +240,19 @@ section.hero {
   min-height: 740px;
   position: relative;
   animation: bg-animate 60s infinite linear;
-  background-image: url(../img/forest-4945407_1920.jpg);
+  background-image: url(../img/forest-4945407_640.jpg);
+}
+
+@media (min-width: 640px) {
+  section.hero {
+    background-image: url(../img/forest-4945407_1280.jpg);
+  }
+}
+
+@media (min-width: 1280px) {
+  section.hero {
+    background-image: url(../img/forest-4945407_1920.jpg);
+  }
 }
 
 section.hero div {
@@ -217,6 +272,7 @@ section.hero div button,
 section.hero div button i {
   transition: 0.2s;
 }
+
 section.hero div button:hover i,
 section.hero div button:hover {
   color: white;
@@ -279,6 +335,10 @@ section.features {
   cursor: pointer;
 }
 
+.feature p {
+  font-weight: 300;
+}
+
 .feature i {
   font-size: 60px;
   margin: 10px 0 15px;
@@ -335,6 +395,7 @@ section.features {
   font-size: 25px;
   margin: 20px 0;
 }
+
 .pellet-main .highlighted {
   color: white;
   background-color: green;
@@ -346,7 +407,7 @@ section.features {
 }
 
 .pellet {
-  margin-top: -140px;
+  margin-top: -120px;
   padding: 0 15px;
 }
 
@@ -357,15 +418,18 @@ section.features {
 .pellet h2 {
   margin: 10px 0;
 }
+
 .pellet p {
   padding: 0 20px;
   font-weight: 600;
   font-size: 1.15rem;
 }
+
 .pellet .highlighted-effect {
   position: relative;
   font-size: 1.1rem;
 }
+
 .pellet .highlighted-effect::before {
   content: "";
   position: absolute;
@@ -381,12 +445,15 @@ section.features {
   .pellet {
     margin-top: -60px;
   }
+
   .pellet h2 {
     font-size: 2.3rem;
   }
+
   .pellet p {
     font-size: 1.3rem;
   }
+
   .pellet .highlighted-effect {
     font-size: 1.2rem;
   }
@@ -396,11 +463,13 @@ section.features {
   .pellet {
     margin-top: -130px;
   }
+
   .pellet .graphic,
   .pellet .description {
     display: flex;
     align-items: center;
   }
+
   .pellet .description {
     flex-direction: column;
   }
@@ -423,11 +492,13 @@ section.features {
     margin-top: 50px;
   }
 }
+
 /* PARAMETERS */
 
 .parameters {
   margin: 15px auto;
 }
+
 .parameters-btn {
   margin: 15px auto;
 }
@@ -459,20 +530,24 @@ section.features {
     font-size: 1.3rem;
   }
 }
+
 @media (min-width: 992px) {
   .parameters h2 {
     /* width: 50%; */
     margin: 30px auto;
     /* text-align: left; */
   }
+
   .parameters .table {
     /* width: 50%; */
     margin: 0 auto;
     /* margin-left: auto; */
   }
+
   .parameters .table {
     font-size: 1.15rem;
   }
+
   .parameters-btn {
     /* order: 0; */
     align-self: center;
@@ -482,6 +557,7 @@ section.features {
   .parameters-btn .btn {
     font-size: 1.3rem;
   }
+
   .parameters .advantages {
     margin: 40px auto;
   }
@@ -501,6 +577,7 @@ section.features {
     margin-right: 3px;
   }
 }
+
 /* PELLET END */
 
 /* DELIVERY START */
@@ -519,6 +596,7 @@ section.features {
   .delivery {
     padding: 40px 15px;
   }
+
   .delivery-icon i {
     font-size: 220px;
   }
@@ -527,6 +605,7 @@ section.features {
     align-self: center;
   }
 }
+
 /* DELIVERY END */
 
 /* PARTNERS START */
@@ -545,3 +624,415 @@ section.features {
 
 
 /* PARTNERS END */
+
+
+
+
+
+
+
+/* SEPARATION */
+
+
+.separation {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin: 20px auto;
+}
+
+.separation .triangle {
+  bottom: 0;
+  border-top: 60px solid;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  color: #198712
+}
+
+/* SEPARATION END */
+
+
+
+
+
+
+
+/* LATEST NEWS */
+
+.latestnew {
+  margin-top: 20px;
+}
+
+.latestnew a {
+  color: black;
+}
+
+.latestnew-img img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 15px;
+  transition: .2s;
+}
+
+.latestnew-desc p {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.latestnew:hover .latestnew-img img {
+  transform: scale(1.1);
+}
+
+/* LATEST NEWS END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+  margin-top: 35px;
+  padding: 15px 10px;
+  color: white;
+}
+
+footer .logo {
+  max-width: 90%;
+  margin-bottom: 10px;
+}
+
+footer .mail {
+  margin: 0 auto 10px;
+  font-size: 1.15rem;
+}
+
+footer .mail div {
+  margin: 5px 0;
+}
+
+footer .mail p {
+  margin-bottom: 0 fAV;
+}
+
+footer .mail a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-tel {
+  margin-left: 15px;
+}
+
+.mail a i {
+  margin-right: 4px;
+  transition: .1s;
+}
+
+.mail a:hover i {
+  transform: scale(1.1);
+}
+
+/* FOOTER END */
+
+
+
+
+/* ***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+********************************
+*/
+
+
+
+
+
+
+/* CONTACT */
+
+.contact {
+  position: relative;
+  background-image: url(../img/wood-3095720_640.jpg);
+  background-size: cover;
+  background-position: center 0;
+  /* margin: 40px auto; */
+  padding: 40px 0;
+}
+
+@media (min-width: 640px) {
+  .contact {
+    background-image: url(../img/wood-3095720_1280.jpg);
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact {
+    background-image: url(../img/wood-3095720_1920.jpg);
+  }
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.268);
+}
+
+.contact-box {
+  align-items: center;
+}
+
+.contact-info {
+
+  margin: 20px auto;
+  padding: 20px 10px;
+  border: 2px solid #198712;
+  width: 70%;
+  /* background-color: rgba(0, 0, 0, 0.753);
+  color: white; */
+}
+
+.contact-info span,
+.contact-form p {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.contact-form {
+  margin: 10px auto;
+  padding: 15px 10px;
+  border: 2px solid #198712;
+  width: 70%;
+}
+
+.contact-info,
+.contact-form {
+  position: relative;
+  background-color: rgba(19, 19, 19, 0.750);
+  color: white;
+}
+
+.contact-form p {
+  margin: 3px 0;
+}
+
+.contact-form input {
+  margin-bottom: 8px;
+}
+
+input,
+input[type=email],
+textarea {
+  border: none;
+  border-bottom: 2px solid #198712;
+  width: 80%;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+
+
+textarea {
+  padding: 0 5px;
+}
+
+input:focus,
+textarea:focus {
+  padding: 0 5px;
+  color: white;
+}
+
+input:focus {
+  border-color: #14970b;
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+}
+
+input[type=submit] {
+  margin: 15px 0 25px;
+  padding: 10px 20px;
+  font-size: 1.15rem;
+  background-color: #198712;
+  color: white;
+
+}
+
+.contact~footer {
+  margin-top: 0;
+}
+
+@media (min-width: 1024px) {
+  .contact-form {
+    width: 90%;
+  }
+
+  .contact-info span {
+    font-size: 1.45rem;
+  }
+
+  .contact-form p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1360px) {
+  .contact {
+    padding: 60px 0;
+  }
+
+  .contact-info {
+    padding: 40px 15px;
+  }
+
+  .contact-form {
+    padding: 40px 15px;
+  }
+
+  .contact-form p {
+    font-weight: normal;
+  }
+}
+
+.map {
+  padding: 0;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 2px solid #10c004;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* CONTACT END */
+
+
+
+
+
+/* ***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+********************************
+*/
+
+
+
+
+
+
+
+
+/* ABOUT US START */
+
+
+.aboutus {
+  position: relative;
+  background-image: url(../img/pellets-4844847_1920.jpg);
+  background-position: center;
+  height: 300px;
+}
+
+.aboutus::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #010a0085;
+}
+
+.aboutus-slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  z-index: 99;
+}
+
+
+.company-img img {
+  max-width: 95%;
+}
+
+
+.company-hours {
+  width: 80%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* ABOUT US END */

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/efects.css">
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
     <!-- STYLES END -->
 </head>
 
@@ -23,7 +24,7 @@
 
 
 
-    <div class="container-fluid bg-success text-light header-banner">
+    <div data-aos="fade-right" class="container-fluid bg-success text-light header-banner">
         <div class="container">
             <div class="row text-center data">
                 <div class="col-12 col-md-4 col-lg-4 address">
@@ -57,11 +58,11 @@
     <!-- *********** -->
     <!-- MENU START -->
     <!-- *********** -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav data-aos="fade-left" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container navi">
             <div class="row">
                 <div class="col-11 col-lg-12">
-                    <a class="navbar-brand" href="#"> <img class="logo" src="/img/logo2.png" alt=""></a>
+                    <a class="navbar-brand" href="/"> <img class="logo" src="/img/logo2.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -71,23 +72,23 @@
             </div>
             <div class="collapse navbar-collapse col-lg-8" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Strona Główna</a>
-                    <a class="nav-link" href="#">Aktualności</a>
-                    <a class="nav-link" href="#">Oferta</a>
-                    <a class="nav-link" href="#">O firmie</a>
-                    <a class="nav-link" href="#">Kontakt</a>
+                    <a class="nav-link" aria-current="page" href="/">Strona Główna</a>
+                    <a class="nav-link" href="/news.html">Aktualności</a>
+                    <a class="nav-link" href="/offer.html">Oferta</a>
+                    <a class="nav-link" href="/aboutus.html">O firmie</a>
+                    <a class="nav-link active" href="/contact.html">Kontakt</a>
                 </div>
 
             </div>
         </div>
-        <div class="triangle"></div>
+        <!-- <div class="triangle"></div> -->
     </nav>
     <!-- *********** -->
     <!-- MENU END -->
     <!-- *********** -->
 
 
-    <section class="container-fluid text-center text-light hero">
+    <section data-aos="zoom-in" class="container-fluid text-center text-light hero">
         <div class="container text-center">
             <h1 class="display-1">Certyfikowany pellet</h1>
             <p>Polska Grupa Pellet to najlepszy dostawca pelletu drzewnego na terenie całego Śląska. Wybierając nas,
@@ -109,7 +110,7 @@
 
 
 
-    <section class="features">
+    <section data-aos="zoom-in" class="features">
         <div class="feature text-center">
             <div><i class="fas fa-medal"></i></i></div>
             <h2>Jakość</h2>
@@ -144,7 +145,7 @@
 
     </section>
 
-    <section class="container text-center pellet">
+    <section data-aos="zoom-in" class="container text-center pellet">
         <div class="row">
             <div class="col-12 col-lg-6 graphic"><img src="../img/infografikapellet.png" loading="lazy" alt=""></div>
             <div class="col-12 col-lg-6 ">
@@ -167,7 +168,7 @@
     </section>
 
 
-    <section class="parameters container">
+    <section data-aos="zoom-in" class="parameters container">
         <div class="row">
 
             <div class="col-12 col-lg-6 px-4">
@@ -233,15 +234,15 @@
 
 
         <div class="row">
-            <div class="col-12 col-lg-6 text-center parameters-btn"><button type="button"
-                    class="btn btn-success btn-lg"><i class="far fa-file-alt"></i> Sprawdź całą ofertę</button>
+            <div class="col-12 col-lg-6 text-center parameters-btn"><a class="btn btn-success btn-lg"
+                    href="/oferta.html"><i class="far fa-file-alt"></i> Sprawdź całą ofertę</a>
             </div>
 
         </div>
     </section>
 
 
-    <section class="container-fluid bg-success delivery">
+    <section data-aos="zoom-in" class="container-fluid bg-success delivery">
         <div class="container">
             <div class="row text-center">
                 <div class="col-12 col-xl-4 delivery-icon"><i class="fas fa-truck-loading"></i></div>
@@ -263,10 +264,15 @@
 
     <!-- PARTNERS START -->
 
-    <section class="container partners">
+    <section data-aos="zoom-in" class="container partners">
         <div class="row text-center">
             <div class="col-12">
                 <h4 class="display-3">Nasi partnerzy</h4>
+            </div>
+            <div class="col-12">
+                <div class="container separation">
+                    <div class="triangle"></div>
+                </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4 partner"> <img src="/img/partner2.png"
@@ -287,11 +293,120 @@
     <!-- PARTNERS END -->
 
 
+    <!-- <section data-aos="zoom-in">
+        <div class="container separation"><div class="triangle"></div></div>
+    </section> -->
+
+
+
+    <!-- LATEST NEWS START -->
+
+    <section data-aos="zoom-in" class="latestnews container">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="display-3 text-center">Ostatnie aktualności</h4>
+            </div>
+            <div class="col-12">
+                <div class="container separation">
+                    <div class="triangle"></div>
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="zoom-in" class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-5 col-xl-4 text-center latestnew">
+                <a href="/news1.html">
+                    <div class="latestnew-img">
+                        <img src="/img/news1.jpg" alt="">
+                    </div>
+                    <div class="latestnew-desc">
+                        <h3>NAGŁÓWEK POSTA</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores consequuntur
+                            ab
+                            dolores deleniti labore, repudiandae modi vitae, architecto amet sapiente accusamus
+                            aspernatur
+                            molestias perspiciatis explicabo doloremque voluptatibus nihil placeat!</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-8 col-lg-5 col-xl-4 text-center latestnew">
+                <a href="/news2.html">
+                    <div class="latestnew-img">
+                        <img src="/img/news2.jpg" alt="">
+                    </div>
+                    <div class="latestnew-desc">
+                        <h3>NAGŁÓWEK POSTA</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores consequuntur
+                            ab
+                            dolores deleniti labore, repudiandae modi vitae, architecto amet sapiente accusamus
+                            aspernatur
+                            molestias perspiciatis explicabo doloremque voluptatibus nihil placeat!</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-8 col-lg-8 col-xl-4 text-center latestnew">
+                <a href="/news3.html">
+                    <div class="latestnew-img">
+                        <img src="/img/news3.jpg" alt="">
+                    </div>
+                    <div class="latestnew-desc">
+                        <h3>NAGŁÓWEK POSTA</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores consequuntur
+                            ab
+                            dolores deleniti labore, repudiandae modi vitae, architecto amet sapiente accusamus
+                            aspernatur
+                            molestias perspiciatis explicabo doloremque voluptatibus nihil placeat!</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LATEST NEWS END -->
+
+
+
+    <!-- FOOTER -->
+
+    <footer data-aos="zoom-in" class="bg-dark text-center container-fluid">
+        <div class="container">
+            <div class="row footer-link"><a class="navbar-brand" href="/"> <img class="logo" src="/img/logo2.png"
+                        alt=""></a>
+            </div>
+            <div class="row my-2">
+                <div class="mail col-12 col-md-6">
+                    <p>Skontaktuj się z nami:</p>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-6 col-xl-5">
+                            <a href="mailto:biuro@pgpellet.pl"><i class="far fa-envelope"></i> biuro@pgpellet.pl</a>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <a href="tel:506866200"><i class="fas fa-phone-alt footer-tel"></i> 506 866 200</a></div>
+                    </div>
+                </div>
+                <div class="copy col-12 col-md-5">
+                    <p>Wszelkie prawa zastrzeżone:</p>
+                    <p>
+                        Copyright&copy; 2021 - Polska Grupa Pellet
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- FOOTER END -->
 
     <!-- *********** -->
     <!-- SCRIPTS START -->
     <script src="https://kit.fontawesome.com/43960fa140.js" crossorigin="anonymous"></script>
     <script src="/bootstrap-js/bootstrap.min.js"></script>
+    <script src="/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- SCRIPTS END -->
     <!-- *********** -->
 </body>
