@@ -84,7 +84,6 @@ header .socials {
 }
 
 @media (min-width: 640px) {
-
   .phone,
   .phone i {
     font-size: 16px;
@@ -103,7 +102,6 @@ header .socials {
 }
 
 @media (min-width: 1024px) {
-
   .phone,
   .phone i {
     font-size: 16px;
@@ -183,7 +181,6 @@ header .socials {
 }
 
 @media (min-width: 992px) {
-
   .navbar-expand-lg,
   .navbar-collapse {
     justify-content: center;
@@ -206,9 +203,6 @@ header .socials {
 /* STYLE MENU END   */
 /* ---------------- */
 
-
-
-
 /* ***********************************
 ***********************************
 ***********************************
@@ -226,11 +220,6 @@ header .socials {
 ***********************************
 ********************************
 */
-
-
-
-
-
 
 /* HERO START */
 
@@ -592,6 +581,12 @@ section.features {
   font-size: 150px;
 }
 
+@media (min-width: 640px) {
+  .delivery-desc p {
+    width: 80%;
+    margin: 0 auto 15px;
+  }
+}
 @media (min-width: 1200px) {
   .delivery {
     padding: 40px 15px;
@@ -622,17 +617,9 @@ section.features {
   align-self: center;
 }
 
-
 /* PARTNERS END */
 
-
-
-
-
-
-
 /* SEPARATION */
-
 
 .separation {
   position: relative;
@@ -646,16 +633,10 @@ section.features {
   border-top: 60px solid;
   border-left: 55px solid transparent;
   border-right: 55px solid transparent;
-  color: #198712
+  color: #198712;
 }
 
 /* SEPARATION END */
-
-
-
-
-
-
 
 /* LATEST NEWS */
 
@@ -671,7 +652,7 @@ section.features {
   width: 300px;
   height: 200px;
   margin-bottom: 15px;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .latestnew-desc p {
@@ -684,22 +665,6 @@ section.features {
 }
 
 /* LATEST NEWS END */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* FOOTER */
 
@@ -738,7 +703,7 @@ footer .mail a {
 
 .mail a i {
   margin-right: 4px;
-  transition: .1s;
+  transition: 0.1s;
 }
 
 .mail a:hover i {
@@ -746,9 +711,6 @@ footer .mail a {
 }
 
 /* FOOTER END */
-
-
-
 
 /* ***********************************
 ***********************************
@@ -767,11 +729,6 @@ footer .mail a {
 ***********************************
 ********************************
 */
-
-
-
-
-
 
 /* CONTACT */
 
@@ -798,7 +755,7 @@ footer .mail a {
 }
 
 .contact::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -812,7 +769,6 @@ footer .mail a {
 }
 
 .contact-info {
-
   margin: 20px auto;
   padding: 20px 10px;
   border: 2px solid #198712;
@@ -837,7 +793,7 @@ footer .mail a {
 .contact-info,
 .contact-form {
   position: relative;
-  background-color: rgba(19, 19, 19, 0.750);
+  background-color: rgba(19, 19, 19, 0.75);
   color: white;
 }
 
@@ -850,7 +806,7 @@ footer .mail a {
 }
 
 input,
-input[type=email],
+input[type="email"],
 textarea {
   border: none;
   border-bottom: 2px solid #198712;
@@ -859,7 +815,6 @@ textarea {
   color: white;
   outline: none;
 }
-
 
 textarea {
   padding: 0 5px;
@@ -879,16 +834,15 @@ input:-internal-autofill-selected {
   background-color: transparent !important;
 }
 
-input[type=submit] {
+input[type="submit"] {
   margin: 15px 0 25px;
   padding: 10px 20px;
   font-size: 1.15rem;
   background-color: #198712;
   color: white;
-
 }
 
-.contact~footer {
+.contact ~ footer {
   margin-top: 0;
 }
 
@@ -961,10 +915,6 @@ select:-webkit-autofill:focus {
 
 /* CONTACT END */
 
-
-
-
-
 /* ***********************************
 ***********************************
 ***********************************
@@ -983,15 +933,7 @@ select:-webkit-autofill:focus {
 ********************************
 */
 
-
-
-
-
-
-
-
 /* ABOUT US START */
-
 
 .aboutus {
   position: relative;
@@ -1001,7 +943,7 @@ select:-webkit-autofill:focus {
 }
 
 .aboutus::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1020,20 +962,21 @@ select:-webkit-autofill:focus {
   z-index: 99;
 }
 
-
-.company-img img {
-  max-width: 95%;
+.company-hours,
+.fb-like-plugin {
+  align-self: center;
 }
 
+.company-img img {
+  max-width: 75%;
+  border: 1px solid #14970b;
+  border-radius: 5px;
+}
 
 .company-hours {
   width: 80%;
   max-width: 550px;
   margin: 0 auto;
 }
-
-
-
-
 
 /* ABOUT US END */
