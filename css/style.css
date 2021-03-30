@@ -417,6 +417,7 @@ section.features {
 .pellet .highlighted-effect {
   position: relative;
   font-size: 1.1rem;
+  overflow: hidden;
 }
 
 .pellet .highlighted-effect::before {
@@ -425,8 +426,8 @@ section.features {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 30px;
-  background-color: rgba(255, 255, 255, 0.562);
+  width: 350px;
+  background-color: rgba(21, 255, 0, 0.116);
   animation: btn-highlighted 8s infinite;
 }
 
@@ -993,15 +994,19 @@ select:-webkit-autofill:focus {
   z-index: 99;
 }
 
+.aboutus-slogan h2 {
+  letter-spacing: 2px;
+}
+
 .company-hours,
 .fb-like-plugin {
   align-self: center;
 }
 
 .company-img img {
-  max-width: 75%;
-  border: 1px solid #14970b;
-  border-radius: 5px;
+  max-width: 85%;
+  border: 1px solid #14970b65;
+  border-radius: 10px;
 }
 
 .company-hours {
@@ -1011,3 +1016,42 @@ select:-webkit-autofill:focus {
 }
 
 /* ABOUT US END */
+
+/* ***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+***********************************
+********************************
+*/
+
+/* OFFER */
+
+.offer-gallery-img img {
+  max-width: 90%;
+  padding: 5px;
+}
+
+@media (min-width: 1024px) {
+  .offer-gallery-img img {
+    max-width: 100%;
+  }
+}
+
+.offer-slogan {
+  position: relative;
+  background-image: url(../img/feed-2615928_1920.jpg);
+  background-position: center;
+  height: 300px;
+}
+/* OFFER END */
