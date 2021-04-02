@@ -13,6 +13,9 @@ body {
   color: #198712;
 }
 
+.red {
+  color: red;
+}
 .bold {
   font-weight: bold;
 }
@@ -321,7 +324,7 @@ section.features {
   color: white;
   margin: 10px;
   transition: 0.2s;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .feature p {
@@ -1053,5 +1056,52 @@ select:-webkit-autofill:focus {
   background-image: url(../img/feed-2615928_1920.jpg);
   background-position: center;
   height: 300px;
+}
+
+.offer-pellet-delivery {
+  margin: 15px 5px;
+}
+
+.offer-pellet-price .highlighted {
+  margin-top: 0 !important;
+  font-size: 1.2rem;
+}
+
+.offer-pellet-table-desc {
+  align-self: center;
+}
+
+.offer-other ul {
+  list-style: none;
+}
+
+.offer-other ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #14970b; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.offer-other ul li {
+  font-size: 1.4rem;
+}
+
+.offer-other img {
+  max-width: 95%;
+}
+
+.offer-other h4 {
+  font-size: 1.7rem;
+}
+
+.offer-other p {
+  font-size: 1.4rem;
+}
+
+.offer-other-img,
+.offer-other-desc {
+  align-self: center;
 }
 /* OFFER END */
