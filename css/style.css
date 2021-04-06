@@ -1104,4 +1104,9 @@ select:-webkit-autofill:focus {
 .offer-other-desc {
   align-self: center;
 }
+
+.offer-other-call {
+  padding: 10px 40px;
+}
+
 /* OFFER END */
