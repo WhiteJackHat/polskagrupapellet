@@ -1,94 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polska Grupa Pellet - Rybnik</title>
-    <!-- STYLES START -->
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
-    <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/efects.css">
-    <link rel="stylesheet" href="aos-master/dist/aos.css">
-    <!-- STYLES END -->
-</head>
-
-<body>
-
-
-
-    <!-- *********** -->
-    <!-- HEADER START -->
-    <!-- *********** -->
-
-
-
-    <div data-aos="fade-right" class="container-fluid bg-success text-light header-banner">
-        <div class="container">
-            <div class="row text-center data">
-                <div class="col-12 col-md-4 col-lg-4 address">
-                    <a href="https://g.page/PGPELLET?share"><i class="fas fa-map-pin"></i>Rybnik, ul. Wodzisławska 5</a>
-                </div>
-                <div class="col-5 col-sm-4 col-md-3 col-lg-3 phone">
-                    <a href="tel:506866200"><i class="fas fa-phone-alt"></i>506 866 200</a>
-                </div>
-                <div class="col-7 col-sm-5 col-md-3 col-lg-3 email">
-                    <a href="mailto:biuro@pgpellet.pl"><i class="far fa-envelope"></i>biuro@pgpellet.pl</a>
-                </div>
-                <div class="col-12 col-sm-3 col-md-2 col-lg-2 socials">
-                    <a href="https://www.facebook.com/Polska-Grupa-Pellet-Sprzeda%C5%BC-pelletu-Rybnik-347095523165547"><i
-                            class="fab fa-facebook"></i></a>
-                    <!-- <a href="#"><i class="fab fa-facebook-messenger"></i></a>
-                    <a href="#"><i class="fas fa-thumbs-up"></i></a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- *********** -->
-    <!-- HEADER END -->
-    <!-- *********** -->
-
-
-
-    <!-- *********** -->
-    <!-- MENU START -->
-    <!-- *********** -->
-    <nav data-aos="fade-left" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container navi">
-            <div class="row">
-                <div class="col-11 col-lg-12">
-                    <a class="navbar-brand" href="/"> <img class="logo" src="/img/logo3.png" alt="Logo Polska Grupa Pellet"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse col-lg-8" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="/">Strona Główna</a>
-                    <a class="nav-link" href="/news.html">Aktualności</a>
-                    <a class="nav-link" href="/offer.html">Oferta</a>
-                    <a class="nav-link" href="/aboutus.html">O firmie</a>
-                    <a class="nav-link" href="/contact.html">Kontakt</a>
-                </div>
-
-            </div>
-        </div>
-        <!-- <div class="triangle"></div> -->
-    </nav>
-    <!-- *********** -->
-    <!-- MENU END -->
-    <!-- *********** -->
-
-
+<?php
+get_header();
+?>
+    
+    
+    
+    
+    
     <section data-aos="zoom-in" class="container-fluid text-center text-light hero">
         <div class="container text-center">
             <h1 class="display-1">Certyfikowany pellet</h1>
@@ -148,7 +65,7 @@
 
     <section data-aos="zoom-in" class="container text-center pellet">
         <div class="row">
-            <div class="col-12 col-lg-6 graphic"><img src="../img/infografikapellet.png" loading="lazy" alt=""></div>
+            <div class="col-12 col-lg-6 graphic"><img src="../wp-content/themes/pgp-wp/assets/images/infografikapellet.png" loading="lazy" alt=""></div>
             <div class="col-12 col-lg-6 ">
 
 
@@ -236,7 +153,7 @@
 
         <div class="row">
             <div class="col-12 col-lg-6 text-center parameters-btn"><a class="btn btn-success btn-lg"
-                    href="/offer.html"><i class="far fa-file-alt"></i> Sprawdź całą ofertę</a>
+                    href="/oferta"><i class="far fa-file-alt"></i> Sprawdź całą ofertę</a>
             </div>
 
         </div>
@@ -280,7 +197,7 @@
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 text-center latestnew">
                 <a href="/news1.html">
                     <div class="latestnew-img">
-                        <img src="/img/news1.jpg" alt="" loading="lazy">
+                        <img src="/wp-content/themes/pgp-wp/assets/images/news1.jpg" alt="" loading="lazy">
                     </div>
                     <div class="latestnew-desc">
                         <h3>NAGŁÓWEK POSTA</h3>
@@ -295,7 +212,7 @@
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 text-center latestnew">
                 <a href="/news2.html">
                     <div class="latestnew-img">
-                        <img src="/img/news2.jpg" alt="" loading="lazy">
+                        <img src="/wp-content/themes/pgp-wp/assets/images/news2.jpg" alt="" loading="lazy">
                     </div>
                     <div class="latestnew-desc">
                         <h3>NAGŁÓWEK POSTA</h3>
@@ -310,7 +227,7 @@
             <div class="col-12 col-md-8 col-lg-8 col-xl-4 text-center latestnew">
                 <a href="/news3.html">
                     <div class="latestnew-img">
-                        <img src="/img/news3.jpg" alt="" loading="lazy">
+                        <img src="/wp-content/themes/pgp-wp/assets/images/news3.jpg" alt="" loading="lazy">
                     </div>
                     <div class="latestnew-desc">
                         <h3>NAGŁÓWEK POSTA</h3>
@@ -361,76 +278,31 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 partner"> <img src="/img/partner2.png"
+            <div class="col-12 col-md-6 col-lg-4 partner"> <img src="/wp-content/themes/pgp-wp/assets/images/partner2.png"
                     alt="Partner Polska Grupa Pellet numer 1" loading="lazy">
             </div>
-            <div class="col-12 col-md-6 col-lg-4 partner"> <img src="/img/partner3.jpg"
+            <div class="col-12 col-md-6 col-lg-4 partner"> <img src="/wp-content/themes/pgp-wp/assets/images/partner3.jpg"
                     alt="Partner Polska Grupa Pellet numer 2" loading="lazy">
             </div>
-            <div class="col-12 col-md-8 col-lg-4 m-auto partner"> <img src="/img/partner1.jpg"
+            <div class="col-12 col-md-8 col-lg-4 m-auto partner"> <img src="/wp-content/themes/pgp-wp/assets/images/partner1.jpg"
                     alt="Partner Polska Grupa Pellet numer 3" loading="lazy">
             </div>
         </div>
     </section>
 
 
-
+    <style>
+    /* ACTIVE LINK STYLE */
+    .navbar-nav li:nth-of-type(1) a {
+        color: rgba(255,255,255,0.95);
+    }
+</style>
 
     <!-- PARTNERS END -->
 
 
-    <!-- <section data-aos="zoom-in">
-        <div class="container separation"><div class="triangle"></div></div>
-    </section> -->
+    <?php
+    get_footer();
+    ?>
 
-
-
-
-
-
-
-    <!-- FOOTER -->
-
-    <footer data-aos="zoom-in" class="bg-dark text-center container-fluid">
-        <div class="container">
-            <div class="row footer-link"><a class="navbar-brand" href="/"> <img class="logo" src="/img/logo3.png"
-                        alt=""></a>
-            </div>
-            <div class="row my-2">
-                <div class="mail col-12 col-md-6">
-                    <p>Skontaktuj się z nami:</p>
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-lg-6 col-xl-5">
-                            <a href="mailto:biuro@pgpellet.pl"><i class="far fa-envelope"></i> biuro@pgpellet.pl</a>
-                        </div>
-                        <div class="col-12 col-lg-6 col-xl-4">
-                            <a href="tel:506866200"><i class="fas fa-phone-alt footer-tel"></i> 506 866 200</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="copy col-12 col-md-5">
-                    <p>Wszelkie prawa zastrzeżone:</p>
-                    <p>
-                        Copyright&copy; 2021 - Polska Grupa Pellet
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- FOOTER END -->
-
-    <!-- *********** -->
-    <!-- SCRIPTS START -->
-    <script src="https://kit.fontawesome.com/43960fa140.js" crossorigin="anonymous"></script>
-    <script src="/bootstrap-js/bootstrap.min.js"></script>
-    <script src="/aos-master/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <!-- SCRIPTS END -->
-    <!-- *********** -->
-</body>
-
-</html>
+    

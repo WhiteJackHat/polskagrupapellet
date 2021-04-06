@@ -1,3 +1,13 @@
+/*
+Theme Name: PGP_WP
+Text Domain: Polska Grupa Pellet
+Version: 1.0
+Description: Eco Pellet Theme
+Tags: wp-pellet
+Author: Jacek Czepil
+Author URI: https://www.facebook.com/jacek.czepil/
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -133,8 +143,21 @@ header .socials {
   padding-top: 10px;
 }
 
-.navbar-nav a.nav-link {
-  margin: 0 10px;
+.navbar-nav a {
+  display: block;
+  color: rgba(255,255,255,.75);
+  margin: 5px 15px;
+  transition: .1s;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav a {
+    margin: 0px 20px;
+  }
+}
+
+.navbar-nav a:hover {
+  color: rgba(255,255,255,.95);
 }
 
 /* @media (min-width: 1024px) {
@@ -232,18 +255,18 @@ section.hero {
   min-height: 740px;
   position: relative;
   animation: bg-animate 60s infinite linear;
-  background-image: url(../img/forest-4945407_640.jpg);
+  background-image: url(../pgp-wp/assets/images/forest-4945407_640.jpg);
 }
 
 @media (min-width: 640px) {
   section.hero {
-    background-image: url(../img/forest-4945407_1280.jpg);
+    background-image: url(../pgp-wp/assets/images/forest-4945407_1280.jpg);
   }
 }
 
 @media (min-width: 1280px) {
   section.hero {
-    background-image: url(../img/forest-4945407_1920.jpg);
+    background-image: url(../pgp-wp/assets/images/forest-4945407_1920.jpg);
   }
 }
 
@@ -642,7 +665,7 @@ section.features {
 
 .separation-pellet {
   height: 300px;
-  background-image: url(../img/forestry-960806_640.jpg);
+  background-image: url(../pgp-wp/assets/images/forestry-960806_640.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
@@ -651,13 +674,13 @@ section.features {
 
 @media (min-width: 640px) {
   .separation-pellet {
-    background-image: url(../img/forestry-960806_1280.jpg);
+    background-image: url(../pgp-wp/assets/images/forestry-960806_1280.jpg);
   }
 }
 
 @media (min-width: 1280px) {
   .separation-pellet {
-    background-image: url(../img/forestry-960806_1920.jpg);
+    background-image: url(../pgp-wp/assets/images/forestry-960806_1920.jpg);
   }
 }
 
@@ -769,23 +792,24 @@ footer .mail a {
 
 .contact {
   position: relative;
-  background-image: url(../img/wood-3095720_640.jpg);
+  background-image: url(../pgp-wp/assets/images/wood-3095720_640.jpg);
   background-size: cover;
   background-position: center 0;
   /* margin: 40px auto; */
   padding: 40px 0;
   animation: bg-animate 60s infinite linear;
+  min-height: 75vh;
 }
 
 @media (min-width: 640px) {
   .contact {
-    background-image: url(../img/wood-3095720_1280.jpg);
+    background-image: url(../pgp-wp/assets/images/wood-3095720_1280.jpg);
   }
 }
 
 @media (min-width: 1280px) {
   .contact {
-    background-image: url(../img/wood-3095720_1920.jpg);
+    background-image: url(../pgp-wp/assets/images/wood-3095720_1920.jpg);
   }
 }
 
@@ -815,7 +839,7 @@ footer .mail a {
 .contact-info span,
 .contact-form p {
   font-size: 1.15rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .contact-form {
@@ -823,6 +847,7 @@ footer .mail a {
   padding: 15px 10px;
   border: 2px solid #198712;
   width: 70%;
+  min-width: 300px;
 }
 
 .contact-info,
@@ -838,6 +863,10 @@ footer .mail a {
 
 .contact-form input {
   margin-bottom: 8px;
+}
+
+.contact-form label {
+  width: 90%;
 }
 
 input,
@@ -870,8 +899,10 @@ input:-internal-autofill-selected {
 }
 
 input[type="submit"] {
-  margin: 15px 0 25px;
-  padding: 10px 20px;
+  display: block;
+  width: auto;
+  margin: 15px auto 0;
+  padding: 7px 30px;
   font-size: 1.15rem;
   background-color: #198712;
   color: white;
@@ -881,9 +912,16 @@ input[type="submit"] {
   margin-top: 0;
 }
 
+/* contact form 7 */
+.wpcf7-response-output {
+  margin-top: 10px !important;
+}
+
+
 @media (min-width: 1024px) {
   .contact-form {
     width: 90%;
+    max-width: 552px;
   }
 
   .contact-info span {
@@ -972,7 +1010,7 @@ select:-webkit-autofill:focus {
 
 .aboutus {
   position: relative;
-  background-image: url(../img/pellets-4844847_1920.jpg);
+  background-image: url(../pgp-wp/assets/images/pellets-4844847_1920.jpg);
   background-position: center;
   height: 300px;
 }
@@ -1053,7 +1091,7 @@ select:-webkit-autofill:focus {
 
 .offer-slogan {
   position: relative;
-  background-image: url(../img/feed-2615928_1920.jpg);
+  background-image: url(../pgp-wp/assets/images/feed-2615928_1920.jpg);
   background-position: center;
   height: 300px;
 }

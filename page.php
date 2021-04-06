@@ -1,98 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polska Grupa Pellet - Rybnik</title>
-    <!-- STYLES START -->
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
-    <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/efects.css">
-    <link rel="stylesheet" href="aos-master/dist/aos.css">
-    <!-- STYLES END -->
-</head>
-
-<body>
+<?php
+get_header();
+?>
 
 
+<?php if (is_page('o-firmie')) : ?>
 
-    <!-- *********** -->
-    <!-- HEADER START -->
-    <!-- *********** -->
-
+    <!-- ABOUT US -->
 
 
-    <div data-aos="fade-right" class="container-fluid bg-success text-light header-banner">
+    <section data-aos="fade-up" class="container-fluid aboutus">
         <div class="container">
-            <div class="row text-center data">
-                <div class="col-12 col-md-4 col-lg-4 address">
-                    <a href="https://g.page/PGPELLET?share"><i class="fas fa-map-pin"></i>Rybnik, ul. Wodzisławska 5</a>
-                </div>
-                <div class="col-5 col-sm-4 col-md-3 col-lg-3 phone">
-                    <a href="tel:506866200"><i class="fas fa-phone-alt"></i>506 866 200</a>
-                </div>
-                <div class="col-7 col-sm-5 col-md-3 col-lg-3 email">
-                    <a href="mailto:biuro@pgpellet.pl"><i class="far fa-envelope"></i>biuro@pgpellet.pl</a>
-                </div>
-                <div class="col-12 col-sm-3 col-md-2 col-lg-2 socials">
-                    <a href="https://www.facebook.com/Polska-Grupa-Pellet-Sprzeda%C5%BC-pelletu-Rybnik-347095523165547"><i
-                            class="fab fa-facebook"></i></a>
-                    <!-- <a href="#"><i class="fab fa-facebook-messenger"></i></a>
-                    <a href="#"><i class="fas fa-thumbs-up"></i></a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- *********** -->
-    <!-- HEADER END -->
-    <!-- *********** -->
-
-
-
-    <!-- *********** -->
-    <!-- MENU START -->
-    <!-- *********** -->
-    <nav data-aos="fade-left" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container navi">
             <div class="row">
-                <div class="col-11 col-lg-12">
-                    <a class="navbar-brand" href="/"> <img class="logo" src="/img/logo3.png" alt="Logo Polska Grupa Pellet"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <div class="col-12 text-center aboutus-slogan">
+                    <h2 class="display-1">O firmie</h2>
                 </div>
-            </div>
-            <div class="collapse navbar-collapse col-lg-8" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="/">Strona Główna</a>
-                    <a class="nav-link" href="/news.html">Aktualności</a>
-                    <a class="nav-link active" href="/offer.html">Oferta</a>
-                    <a class="nav-link" href="/aboutus.html">O firmie</a>
-                    <a class="nav-link" href="/contact.html">Kontakt</a>
-                </div>
-
             </div>
         </div>
-        <!-- <div class="triangle"></div> -->
-    </nav>
-    <!-- *********** -->
-    <!-- MENU END -->
-    <!-- *********** -->
+
+    </section>
+
+    <section data-aos="zoom-in" class="quote my-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="display-3 text-center my-3 green">Kilka słów o nas</h3>
+                </div>
+                <div class="col-12">
+                    <p class="text-center">Jesteśmy dostawcą najwyższej jakości pelletu na Śląsku. Oferujemy pellet
+                        wykonany w 100% z czystej trociny. Usługi świadczone przez nas są zawsze wykonywane na najwyższym poziomie. Nasi pracownicy posiadają wieloletnie doświadczenie i świetnie sprostają każdym indywidualnym potrzebom.</p>
+                    <p class="text-center">Zapraszamy do naszego salonu <span class="green">ul. Wodzisławska 5, Rybnik</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section data-aos="zoom-in" class="company">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5 col-xl-6 text-center company-img">
+                    <img src="../wp-content/themes/pgp-wp/assets/images/company.jpeg" alt="Zdjęcie firmy Polska Grupa Pellet" loading="lazy">
+                </div>
+                <div class="col-12 col-lg-6 company-hours">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col company-hour">Godziny otwarcia</th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Poniedziałek</th>
+                                <td>8:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Wtorek</th>
+                                <td>8:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Środa</th>
+                                <td>8:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Czwartek</th>
+                                <td>8:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Piątek</th>
+                                <td>8:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sobota</th>
+                                <td>Nieczynne</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Niedziela</th>
+                                <td>Nieczynne</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section data-aos="zoom-in" class="container my-4 fb-like">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xl-6 text-center">
+                <p class="display-4 green">Znajdziesz nas również na facebooku! <i class="fas fa-thumbs-up"></i></p>
+            </div>
+            <div class="col-12 col-lg-5 col-xl-6 text-center my-3 fb-like-plugin">
+
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPolska-Grupa-Pellet-Sprzeda%25C5%25BC-pelletu-Rybnik-347095523165547&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+    /* ACTIVE LINK STYLE */
+    .navbar-nav li:nth-of-type(4) a {
+        color: rgba(255,255,255,0.95);
+    }
+</style>
+
+    <!-- ABOUT US END -->
+
+
+<?php endif ?>
 
 
 
-
-
-
+<?php if (is_page('oferta')) : ?>
     <!-- OFFER -->
 
     <section data-aos="fade-up" class="container-fluid aboutus offer-slogan">
@@ -148,18 +173,12 @@
                 <p>Poniżej przedstawiamy rzeczywiste zdjęcia naszego pelletu:</p>
             </div>
             <div data-aos="zoom-in" class="row offer-gallery">
-                <div data-aos="zoom-in" class="col-sm-6 col-lg-4 offer-gallery-img"><img src="img/pellet/pellet4.jpg"
-                        alt="Pellet sosnowy" loading="lazy"></div>
-                <div data-aos="zoom-in" class="col-sm-6 col-lg-4 offer-gallery-img"><img src="img/pellet/pellet2.jpg"
-                        alt="Pellet sosnowy" loading="lazy"></div>
-                <div data-aos="zoom-in" class="col-sm-6 col-lg-4 offer-gallery-img"><img src="img/pellet/pellet5.jpg"
-                        alt="Pellet sosnowy" loading="lazy"></div>
-                <div data-aos="zoom-in" class="col-sm-6 col-lg-4 offer-gallery-img"><img src="img/pellet/pellet1.jpg"
-                        alt="Pellet sosnowy" loading="lazy"></div>
-                <div data-aos="zoom-in" class="col-sm-6 col-lg-4 offer-gallery-img"><img src="img/pellet/pellet3.jpg"
-                        alt="Pellet sosnowy" loading="lazy"></div>
-                <div data-aos="zoom-in" class="col-sm-6 col-lg-4 offer-gallery-img"><img src="img/pellet/pellet6.jpg"
-                        alt="Pellet sosnowy" loading="lazy"></div>
+                <div data-aos="zoom-in" class="col-sm-6 col-lg-4 offer-gallery-img"><img src="../wp-content/themes/pgp-wp/assets/images/pellet/pellet4.jpg" alt="Pellet sosnowy" loading="lazy"></div>
+                <div data-aos="zoom-in" class="col-sm-6 col-lg-4 offer-gallery-img"><img src="../wp-content/themes/pgp-wp/assets/images/pellet/pellet2.jpg" alt="Pellet sosnowy" loading="lazy"></div>
+                <div data-aos="zoom-in" class="col-sm-6 col-lg-4 offer-gallery-img"><img src="../wp-content/themes/pgp-wp/assets/images/pellet/pellet5.jpg" alt="Pellet sosnowy" loading="lazy"></div>
+                <div data-aos="zoom-in" class="col-sm-6 col-lg-4 offer-gallery-img"><img src="../wp-content/themes/pgp-wp/assets/images/pellet/pellet1.jpg" alt="Pellet sosnowy" loading="lazy"></div>
+                <div data-aos="zoom-in" class="col-sm-6 col-lg-4 offer-gallery-img"><img src="../wp-content/themes/pgp-wp/assets/images/pellet/pellet3.jpg" alt="Pellet sosnowy" loading="lazy"></div>
+                <div data-aos="zoom-in" class="col-sm-6 col-lg-4 offer-gallery-img"><img src="../wp-content/themes/pgp-wp/assets/images/pellet/pellet6.jpg" alt="Pellet sosnowy" loading="lazy"></div>
             </div>
         </div>
         <div data-aos="zoom-in" class="row text-center">
@@ -250,7 +269,7 @@
                 <h2><span class="green">Kotły na pellet</span> i nie tylko</h1>
             </div>
             <div class="col-12 col-md-6 offer-other-img">
-                <div><img src="/img/pelletron.png" alt="Kocioł pelletowy Tomiko Pellatron" loading="lazy"></div>
+                <div><img src="../wp-content/themes/pgp-wp/assets/images/pelletron.png" alt="Kocioł pelletowy Tomiko Pellatron" loading="lazy"></div>
             </div>
             <div class="col-12 col-md-6 offer-other-desc">
                 <h4 class="green">Kocioł na pellet TOMIKO PELLATRON 20kW</h4>
@@ -272,9 +291,8 @@
                     <li>Klimatyzację</li>
                     <li>Rekuperację</li>
                 </ul>
-                <a href="tel:506866200"><button type="button" class="btn btn-success btn-lg offer-other-call"><i
-                    class="fas fa-phone-alt phone-btn"></i> Zadzwoń do
-                nas!</button></a>
+                <a href="tel:506866200"><button type="button" class="btn btn-success btn-lg offer-other-call"><i class="fas fa-phone-alt phone-btn"></i> Zadzwoń do
+                        nas!</button></a>
             </div>
         </div>
 
@@ -285,55 +303,81 @@
 
     </section>
 
-
+<style>
+    /* ACTIVE LINK STYLE */
+    .navbar-nav li:nth-of-type(3) a {
+        color: rgba(255,255,255,0.95);
+    }
+</style>
     <!-- OFFER OTHER END -->
 
+<?php endif ?>
 
 
 
 
-    <!-- FOOTER -->
+<?php if (is_page('kontakt')) : ?>
 
-    <footer data-aos="zoom-in" class="bg-dark text-center container-fluid">
+
+    <!-- FORM START -->
+
+    <section data-aos="fade-up" class="contact container-fluid">
         <div class="container">
-            <div class="row footer-link"><a class="navbar-brand" href="/"> <img class="logo" src="/img/logo3.png"
-                        alt=""></a>
-            </div>
-            <div class="row my-2">
-                <div class="mail col-12 col-md-6">
-                    <p>Skontaktuj się z nami:</p>
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-lg-6 col-xl-5">
-                            <a href="mailto:biuro@pgpellet.pl"><i class="far fa-envelope"></i> biuro@pgpellet.pl</a>
-                        </div>
-                        <div class="col-12 col-lg-6 col-xl-4">
-                            <a href="tel:506866200"><i class="fas fa-phone-alt footer-tel"></i> 506 866 200</a>
-                        </div>
+            <div class="row contact-box">
+                <div class="col-12 col-lg-5 text-center">
+                    <div class="contact-info">
+                        <span class="green">Polska Grupa Pellet</span>
+                        <p>ul. Wodzisławska 5</p>
+                        <p>44-200 Rybnik</p>
+                        <span class="green">E-mail:</span>
+                        <p>biuro@pgpellet.pl</p>
+                        <span class="green">Telefon:</span>
+                        <p>506 866 200</p>
                     </div>
                 </div>
-                <div class="copy col-12 col-md-5">
-                    <p>Wszelkie prawa zastrzeżone:</p>
-                    <p>
-                        Copyright&copy; 2021 - Polska Grupa Pellet
-                    </p>
+                <div class="col-12 col-lg-7">
+                    <div class="contact-form text-center">
+                       <?php echo do_shortcode( '[contact-form-7 id="32" title="Formularz 1"]' ); ?>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
 
 
-    <!-- FOOTER END -->
+    <!-- FORM END -->
 
-    <!-- *********** -->
-    <!-- SCRIPTS START -->
-    <script src="https://kit.fontawesome.com/43960fa140.js" crossorigin="anonymous"></script>
-    <script src="/bootstrap-js/bootstrap.min.js"></script>
-    <script src="/aos-master/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <!-- SCRIPTS END -->
-    <!-- *********** -->
-</body>
 
-</html>
+    <!-- MAP START -->
+
+
+    <div class="container-fluid map">
+        <div data-aos="fade-up" class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.5618676124077!2d18.53421451571848!3d50.094489379427834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47114fa19e638df7%3A0x709d0363554c664f!2sPellet%20Rybnik%20-%20Polska%20Grupa%20Pellet!5e0!3m2!1spl!2spl!4v1616531905424!5m2!1spl!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- MAP END -->
+    <style>
+    /* ACTIVE LINK STYLE */
+    .navbar-nav li:nth-of-type(5) a {
+        color: rgba(255,255,255,0.95);
+    }
+</style>
+
+<?php endif ?>
+
+<?php
+get_footer();
+?>
