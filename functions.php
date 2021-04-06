@@ -3,6 +3,9 @@
 function pgp_wp_theme_support(){
     //adds dynamic theme title
     add_theme_support('title-tag');
+    add_theme_support( 'post-thumbnails' );
+    // set_post_thumbnail_size( 300, 300); // default Post Thumbnail dimensions (cropped)
+
 }
 
 add_action ('after_setup_theme', 'pgp_wp_theme_support');

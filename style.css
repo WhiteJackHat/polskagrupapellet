@@ -666,7 +666,6 @@ section.features {
 .separation-pellet {
   height: 300px;
   background-image: url(../pgp-wp/assets/images/forestry-960806_640.jpg);
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
   margin: 30px 0;
@@ -675,6 +674,7 @@ section.features {
 @media (min-width: 640px) {
   .separation-pellet {
     background-image: url(../pgp-wp/assets/images/forestry-960806_1280.jpg);
+    background-attachment: fixed;
   }
 }
 
@@ -690,6 +690,7 @@ section.features {
 
 .latestnews {
   margin-top: 20px;
+  padding: 0;
 }
 
 @media (min-width: 1024px) {
@@ -702,11 +703,18 @@ section.features {
   margin-bottom: 20px;
 }
 
-.latestnew a {
-  color: black;
+
+.latestnew li:first-of-type {
+  margin-bottom: 5px;
+  font-size: 2.3rem;
+  transition: .15s;
 }
 
-.latestnew-img img {
+.latestnew li:first-of-type:hover {
+    transform: scale(1.035);
+}
+
+.latestnew img {
   width: 300px;
   height: 200px;
   margin-bottom: 15px;
@@ -718,9 +726,6 @@ section.features {
   margin: 0 auto;
 }
 
-.latestnew:hover .latestnew-img img {
-  transform: scale(1.1);
-}
 
 /* LATEST NEWS END */
 

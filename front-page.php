@@ -193,56 +193,52 @@ get_header();
             </div>
         </div>
 
-        <div data-aos="zoom-in" class="row justify-content-center">
-            <div class="col-12 col-md-8 col-lg-5 col-xl-4 text-center latestnew">
-                <a href="/news1.html">
-                    <div class="latestnew-img">
-                        <img src="/wp-content/themes/pgp-wp/assets/images/news1.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="latestnew-desc">
-                        <h3>NAGŁÓWEK POSTA</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores consequuntur
-                            ab
-                            dolores deleniti labore, repudiandae modi vitae, architecto amet sapiente accusamus
-                            aspernatur
-                            molestias perspiciatis explicabo doloremque voluptatibus nihil placeat!</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-8 col-lg-5 col-xl-4 text-center latestnew">
-                <a href="/news2.html">
-                    <div class="latestnew-img">
-                        <img src="/wp-content/themes/pgp-wp/assets/images/news2.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="latestnew-desc">
-                        <h3>NAGŁÓWEK POSTA</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores consequuntur
-                            ab
-                            dolores deleniti labore, repudiandae modi vitae, architecto amet sapiente accusamus
-                            aspernatur
-                            molestias perspiciatis explicabo doloremque voluptatibus nihil placeat!</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-8 col-lg-8 col-xl-4 text-center latestnew">
-                <a href="/news3.html">
-                    <div class="latestnew-img">
-                        <img src="/wp-content/themes/pgp-wp/assets/images/news3.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="latestnew-desc">
-                        <h3>NAGŁÓWEK POSTA</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores consequuntur
-                            ab
-                            dolores deleniti labore, repudiandae modi vitae, architecto amet sapiente accusamus
-                            aspernatur
-                            molestias perspiciatis explicabo doloremque voluptatibus nihil placeat!</p>
-                    </div>
-                </a>
-            </div>
+        <ul data-aos="zoom-in" class="row justify-content-center latestnews" style="list-style:none">
+ 
+ <?php 
+ // Define our WP Query Parameters
+ $the_query = new WP_Query( 'posts_per_page=5' ); ?>
+   
+  
+ <?php 
+ // Start our WP Query
+ while ($the_query -> have_posts()) : $the_query -> the_post(); 
+ 
+ // Display the Post Title with Hyperlink
 
-        </div>
 
+ ?>
+ <div class="col-12 col-md-8 col-lg-8 col-xl-4 text-center latestnew">  
+  
+
+ <?php
+
+ // check if the post has a Post Thumbnail assigned to it.
+if ( has_post_thumbnail() ) {
+	the_post_thumbnail();
+} 
+
+?>
+
+ <li><a class="green" href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
+   
+ 
+ <li><?php 
+ // Display the Post Excerpt
+ the_excerpt(__('(more…)')); ?></li>
+   </div>
+  
+ <?php 
+ // Repeat the process and reset once it hits the limit
+ endwhile;
+ wp_reset_postdata();
+ ?>
+
+ </ul>
+
+ 
     </section>
+    
 
     <!-- LATEST NEWS END -->
 
