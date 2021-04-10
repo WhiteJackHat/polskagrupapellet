@@ -28,7 +28,7 @@ get_header();
 
 
 
-    <section data-aos="zoom-in" class="features">
+    <section class="features">
         <div class="feature text-center">
             <div><i class="fas fa-medal"></i></i></div>
             <h2>Jakość</h2>
@@ -65,7 +65,7 @@ get_header();
 
     <section data-aos="zoom-in" class="container text-center pellet">
         <div class="row">
-            <div class="col-12 col-lg-6 graphic"><img src="../wp-content/themes/pgp-wp/assets/images/infografikapellet.png" loading="lazy" alt=""></div>
+            <div class="col-12 col-lg-6 graphic"><img src="/wp-content/themes/pgp-wp/assets/images/infografikapellet.png" loading="lazy" alt=""></div>
             <div class="col-12 col-lg-6 ">
 
 
@@ -197,7 +197,7 @@ get_header();
  
  <?php 
  // Define our WP Query Parameters
- $the_query = new WP_Query( 'posts_per_page=5' ); ?>
+ $the_query = new WP_Query( 'posts_per_page=3' ); ?>
    
   
  <?php 

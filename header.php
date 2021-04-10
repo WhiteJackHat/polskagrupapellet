@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>Polska Grupa Pellet - Rybnik</title> -->
     <!-- STYLES START -->
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <!-- <link rel="icon" type="image/png" href="img/favicon.png"/> -->
 
     <!-- STYLES END -->
 

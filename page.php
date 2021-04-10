@@ -330,9 +330,9 @@ get_header();
                         <p>ul. Wodzisławska 5</p>
                         <p>44-200 Rybnik</p>
                         <span class="green">E-mail:</span>
-                        <p>biuro@pgpellet.pl</p>
+                        <p><a href="mailto:biuro@pgpellet.pl">biuro@pgpellet.pl</a></p>
                         <span class="green">Telefon:</span>
-                        <p>506 866 200</p>
+                        <p><a href="tel:506866200">506 866 200</a></p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-7">
@@ -377,6 +377,103 @@ get_header();
 </style>
 
 <?php endif ?>
+
+
+
+
+
+
+
+<?php if (is_page('aktualnosci')) : ?>
+
+
+
+ <!-- NEWS START -->
+
+ <section data-aos="fade-up" class="container-fluid aboutus news-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center aboutus-slogan">
+                    <h1 class="display-1">Aktualności</h1>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+        <ul data-aos="zoom-in" class="row justify-content-center latestnews" style="list-style:none">
+ 
+ <?php 
+ // Define our WP Query Parameters
+ $the_query = new WP_Query( 'posts_per_page=6' ); ?>
+   
+  
+ <?php 
+ // Start our WP Query
+ while ($the_query -> have_posts()) : $the_query -> the_post(); 
+ 
+ // Display the Post Title with Hyperlink
+
+
+ ?>
+ <div class="col-12 col-md-8 col-lg-8 col-xl-4 text-center latestnew">  
+  
+
+ <?php
+
+ // check if the post has a Post Thumbnail assigned to it.
+if ( has_post_thumbnail() ) {
+	the_post_thumbnail();
+} 
+
+?>
+
+ <li><a class="green" href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
+   
+ 
+ <li><?php 
+ // Display the Post Excerpt
+ the_excerpt(__('(more…)')); ?></li>
+   </div>
+  
+ <?php 
+ // Repeat the process and reset once it hits the limit
+ endwhile;
+ wp_reset_postdata();
+ ?>
+
+ </ul>
+
+ 
+    </section>
+
+    <style>
+    /* ACTIVE LINK STYLE */
+    .navbar-nav li:nth-of-type(2) a {
+        color: rgba(255,255,255,0.95);
+    }
+</style>
+    <!-- OFFER OTHER END -->
+
+
+    <?php endif ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <?php
 get_footer();
