@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="copy col-12 col-md-5">
-                    <p>Wszelkie prawa zastrzeżone:</p>
+                    <p class="polityka"><a href="/polityka-prywatnosci">Polityka prywatności</a></p>
                     <p>
                         Copyright&copy; 2021 - Polska Grupa Pellet
                     </p>

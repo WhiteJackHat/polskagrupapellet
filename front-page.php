@@ -187,7 +187,7 @@ sprostać wymaganiom każdego klienta.</p>
             </div>
         </div>
 
-        <ul data-aos="zoom-in" class="row justify-content-center latestnews" style="list-style:none">
+        <ul data-aos="zoom-in" class="row px-lg-3 justify-content-center latestnews" style="list-style:none">
  
  <?php 
  // Define our WP Query Parameters
@@ -267,16 +267,21 @@ if ( has_post_thumbnail() ) {
                     <div class="triangle"></div>
                 </div>
             </div>
-
-            <div class="col-12 col-md-6 col-lg-4 partner"> <img src="/wp-content/themes/pgp-wp/assets/images/partner2.png"
+         
+            <div class="col-12 col-md-6 partner"> <img src="/wp-content/themes/pgp-wp/assets/images/partner2.png"
                     alt="Partner Polska Grupa Pellet numer 1" loading="lazy">
             </div>
-            <div class="col-12 col-md-6 col-lg-4 partner"> <img src="/wp-content/themes/pgp-wp/assets/images/partner3.jpg"
+            <div class="col-12 col-md-6 partner"> <img src="/wp-content/themes/pgp-wp/assets/images/partner3.jpg"
                     alt="Partner Polska Grupa Pellet numer 2" loading="lazy">
             </div>
-            <div class="col-12 col-md-8 col-lg-4 m-auto partner"> <img src="/wp-content/themes/pgp-wp/assets/images/partner1.jpg"
+            <div class="col-12 col-md-6 partner"> <img src="/wp-content/themes/pgp-wp/assets/images/camino.png"
+                    alt="Partner Polska Grupa Pellet numer 4" loading="lazy">
+            </div>
+            <div class="col-12 col-md-6 partner"> <img src="/wp-content/themes/pgp-wp/assets/images/partner1.jpg"
                     alt="Partner Polska Grupa Pellet numer 3" loading="lazy">
             </div>
+       
+       
         </div>
     </section>
 

@@ -1024,6 +1024,24 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+
+
+.wpcf7-form p:nth-last-of-type(2) {
+  font-size: 12px;
+}
+
+.wpcf7-form p:nth-last-of-type(2) a {
+  color: white;
+}
+
+
+.wpcf7-form p:nth-last-of-type(2) a:hover {
+  color: rgba(3, 192, 12, 0.884);
+}
+
+
+
+
 /* CONTACT END */
 
 /* ***********************************
@@ -1274,6 +1292,20 @@ article p {
   max-width: 90%;
 }
 
+.polityka a {
+  color: white;
+}
+
+.polityka {
+  transition: .1s;
+}
+.polityka:hover {
+  transform: scale(1.05);
+}
+
+.polityka:hover a {
+  color: rgb(207, 207, 207);
+}
 
 
 
