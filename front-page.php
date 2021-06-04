@@ -8,12 +8,9 @@ get_header();
     
     <section data-aos="zoom-in" class="container-fluid text-center text-light hero">
         <div class="container text-center">
-            <h1 class="display-1">Certyfikowany pellet</h1>
-            <p>Polska Grupa Pellet to najlepszy dostawca pelletu drzewnego na terenie całego Śląska. Wybierając nas,
-                wybierają państwo
-                gwarancje idealnie pracującego kotła na pellet. Gwarantujemy powtarzalność produktu oraz świetną jakość
-                potwierdzoną badaniami. Sprzedajemy pellet premium tylko i wyłącznie w 100% z czystej trociny. Jesteśmy
-                przeciwni recyklingu materiałów przemysłowych oraz sprzedaży ich pod przykrywką biomasy.</p>
+            <h1 class="display-1">Polska Grupa Pellet</h1>
+            <p>Polska Grupa Pellet to rzetelny i sumienny dostawca pelletu na terenie Śląska. Prowadzimy sprzedaż pelletu stacjonarnie w Rybniku oraz dostarczamy pellet na terenie całego Śląska.
+Wyróżniają nas przede wszystkim atrakcyjne ceny oraz najwyższa jakość pelletu. Nasz produkt jest czysty bez domieszek. Poprzez wprowadzanie do oferty jedynie pelletu certyfikowanego gwarantujemy idealne spalanie w każdym kotle.</p>
             <a href="tel:506866200"><button type="button" class="btn btn-light btn-lg"><i
                         class="fas fa-phone-alt phone-btn"></i> Zadzwoń do
                     nas!</button></a>
@@ -36,7 +33,7 @@ get_header();
                 <p>Nasze produkty utrzymują normę A1. Nasz produkt był testowany
                     w najbardziej wymagających kotłach.
                     <span class="bold">Świetnie spala</span> się m.in w piecach: <span class="bold">Kostrzewa Platinum
-                        Bio, Lazar, Lidia Mini, Windhager</span>
+                        Bio, Lazar, Lidia Mini, Windhager.</span> Po spaleniu tony pelletu zostaje tylko ok. 3-4kg popiołu.
                 </p>
             </div>
         </div>
@@ -45,18 +42,17 @@ get_header();
             <div><i class="fas fa-fire-alt"></i></div>
             <h2>Kaloryczność</h2>
             <div>
-                <p>Nasz pellet produkowany jest w <span class="bold">100% z
-                        czystej trociny</span>, bez jakichkolwiek dodatków. Cechuje go wysoka kaloryczność. <span
-                        class="bold">Po spaleniu tony naszego pelletu zostaje tylko ok. 3-4kg popiołu.</span></p>
+            <p>Nasz pallet sosnowy charakteryzuje się wysoką kalorycznością. <span class="bold">Do produkcji pelletu wykorzystujemy jedynie drzewo z najbardziej prestiżowym certyfikatem jakości FSC,</span> dzięki czemu uzyskujemy najlepsze parametry oraz gwarantujemy powtarzalność partii.
+                </p>
             </div>
         </div>
         <div class="feature text-center">
             <div><i class="fas fa-truck-loading"></i></div>
             <h2>Dostawa</h2>
             <div>
-                <p>Jesteśmy dostawcą <span class="bold">najwyższej jakości pelletu drzewnego na terenie całego
-                        Śląska.</span> Nasi kierowcy wyposażeni są w elektryczne wózki paletowe aby sprostać najwyższym
-                    oczekiwaniom.</p>
+                <p>Każde zamówienie traktujemy profesjonalnie, zawsze dojeżdzamy do klienta na czas po wcześniejszym umówieniu terminu.
+<span class="bold">Dostawa na terenie Śląska jest BEZPŁATNA.</span> W naszej flocie posiadamy samochody z windą oraz wózkiem elektrycznym, aby 
+sprostać wymaganiom każdego klienta.</p>
             </div>
         </div>
 
@@ -75,9 +71,7 @@ get_header();
                     <div class="col-8 col-sm-6 col-md-4 col-lg-7 col-xl-5 m-auto pellet-main">
                         <h4 class="text-center highlighted">Polecamy <i class="fab fa-hotjar icon"></i></h4>
                     </div>
-                    <p>Produkowany tylko i wyłącznie <span class="green">z czystej trociny,</span> bez jakichkolwiek
-                        dodatków oraz chemicznych lepiszczy. Najwyższej jakości pellet drzewny, opałowy gwarantuje
-                        idealne spalanie oraz bezproblemową eksploatajcę kotła.</p>
+                    <p>Polecamy państwu <span class="green">pellet premium który gwarantuje wzorową pracę każdego kotła na pellet.</span> Nasz produkt pozbawiony jest jakichkolwiek domieszek chemicznych substancji. Wybierając ten produkt każdy klient wybiera poczucie bezpieczeństwa i wzorową pracę kotła.</p>
                     <div class="col-12 col-sm-8 col-md-6 col-lg-10 col-xl-8 m-auto pellet-main">
                         <h4 class="text-center highlighted highlighted-effect"><i class="fas fa-tag icon"></i> Cena
                             860zł brutto / 1005kg</h4>

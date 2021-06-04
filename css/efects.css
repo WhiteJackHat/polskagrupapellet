@@ -1,0 +1,46 @@
+/* @keyframes bg-animate {
+    5% {
+        background-image: url(../img/forest-4945407_1920.jpg);
+    }
+    45% {
+        background-image: url(../img/forest-4945407_1920.jpg);
+    }
+    55% {
+    background-image: url(../img/forest-3392077_1920.jpg);
+}
+    95% {
+        background-image: url(../img/forest-3392077_1920.jpg);
+    }
+
+}
+ */
+
+ @keyframes bg-animate {
+     0% {
+         background-position: 0 0;
+     }
+    
+     50% {
+         background-position: center;
+     }
+ 
+    100% {
+        background-position: 0 0;
+    }
+ }
+
+ @keyframes btn-highlighted {
+     0% {
+         left: -30px; 
+     }
+
+     50% {
+         left: calc(100% + 30px);
+     }
+
+     100% {
+         left: -30px; 
+     }
+ } 
+
+
