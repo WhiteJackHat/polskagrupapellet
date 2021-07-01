@@ -14,7 +14,7 @@ add_action ('after_setup_theme', 'pgp_wp_theme_support');
 function pgp_wp_menus() {
 
     $locations = array(
-        'primary' => "Primary navibar"
+        'primary' => "Primary"
     );
 
 register_nav_menus($locations);
@@ -37,15 +37,9 @@ function pgp_wp_register_scripts() {
     wp_enqueue_script('pgp_wp_fontawesome', 'https://kit.fontawesome.com/43960fa140.js', array(), '1.0', true); 
     wp_enqueue_script('pgp_wp_aos_js', get_template_directory_uri() . "/inc/aos-master/dist/aos.js", array(), '1.0', true); 
     wp_enqueue_script('pgp_wp_aos_jsinit', get_template_directory_uri() . "/assets/js/aos_init.js", array(), '1.0', true); 
+    wp_enqueue_script('pgp_wp_myscripts', get_template_directory_uri() . "/assets/js/myscripts.js", array(), '1.0', true); 
 
 }
 
 
 add_action ('wp_enqueue_scripts', 'pgp_wp_register_scripts');
-
-
-
-
-
-?>
-

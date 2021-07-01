@@ -288,7 +288,7 @@ if ( has_post_thumbnail() ) {
 
     <style>
     /* ACTIVE LINK STYLE */
-    .navbar-nav li:nth-of-type(1) a {
+    .navbar-nav li:nth-child(1) a {
         color: rgba(255,255,255,0.95);
     }
 </style>
