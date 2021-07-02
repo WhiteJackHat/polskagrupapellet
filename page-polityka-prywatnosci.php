@@ -1,3 +1,8 @@
+<?php 
+get_header();
+?>
+
+
 <div class="container"></div>
 
 <div class="col-12 col-lg-8 px-3 m-auto text-center">
@@ -45,3 +50,8 @@ Dla użytkowników którzy zarejestrowali się na naszej stronie internetowej (j
 <p>Komentarze gości mogą być sprawdzane za pomocą automatycznej usługi wykrywania spamu.</p>
 
 </div>
+
+
+<?php 
+get_footer();
+?>

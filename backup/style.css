@@ -20,6 +20,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .green {
   color: #198712;
 }
@@ -146,9 +147,9 @@ header .socials {
 
 .navbar-nav a {
   display: block;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255,255,255,.75);
   margin: 5px 15px;
-  transition: 0.1s;
+  transition: .1s;
 }
 
 @media (min-width: 992px) {
@@ -158,7 +159,7 @@ header .socials {
 }
 
 .navbar-nav a:hover {
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(255,255,255,.95);
 }
 
 /* @media (min-width: 1024px) {
@@ -224,53 +225,6 @@ header .socials {
   .navbar-toggler {
     margin-left: 1rem;
   }
-}
-
-/* STYLE FOR DROPDOWNS */
-.navbar {
-  z-index: 99999;
-}
-.sub-menu {
-  display: none;
-}
-
-.menu-item-has-children {
-  position: relative;
-  cursor: pointer;
-}
-
-.menu-item-has-children .sub-menu.active {
-  display: block;
-  top: 120%;
-  /* left: 25%; */
-  /* margin-left: 50px; */
-  /* width: 100%; */
-  padding: 5px;
-  background-color: #212529;
-  margin-left: 8px;
-  list-style: none;
-  border-radius: 5px;
-  border: 1px solid rgba(122, 122, 122, 0.671);
-  z-index: 9999;
-}
-
-@media (min-width: 992px) {
-  .menu-item-has-children .sub-menu.active {
-    position: absolute;
-    text-align: center;
-    margin-left: 0;
-  }
-}
-
-.menu-item-has-children .sub-menu li a {
-  display: block;
-  padding: 10px 0px;
-  color: rgb(207, 207, 207) !important;
-  transition: 0.15s;
-}
-
-.menu-item-has-children .sub-menu li:hover a {
-  color: white !important;
 }
 
 /* ---------------- */
@@ -755,8 +709,9 @@ section.features {
   margin: 0 auto 1rem;
 }
 
+
 .latestnew li a {
-  transition: 0.2s;
+  transition: .2s;
 }
 .latestnew li a:hover {
   color: #10c004;
@@ -773,10 +728,11 @@ section.features {
   max-width: 100%;
 }
 
+
 .latestnew li:first-of-type {
   margin-bottom: 5px;
   font-size: 2.3rem;
-  transition: 0.15s;
+  transition: .15s;
 }
 
 .latestnew img {
@@ -917,7 +873,7 @@ footer .mail a {
 
 .contact-info a {
   color: white;
-  transition: 0.2s;
+  transition: .2s;
 }
 
 .contact-info a:hover {
@@ -999,6 +955,7 @@ input[type="submit"] {
   margin-top: 10px !important;
 }
 
+
 @media (min-width: 1024px) {
   .contact-form {
     width: 90%;
@@ -1067,6 +1024,8 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+
+
 .wpcf7-form p:nth-last-of-type(2) {
   font-size: 12px;
 }
@@ -1075,9 +1034,13 @@ select:-webkit-autofill:focus {
   color: white;
 }
 
+
 .wpcf7-form p:nth-last-of-type(2) a:hover {
   color: rgba(3, 192, 12, 0.884);
 }
+
+
+
 
 /* CONTACT END */
 
@@ -1171,6 +1134,7 @@ select:-webkit-autofill:focus {
 
 /* OFFER */
 
+
 .offer-gallery {
   margin: 0 auto;
 }
@@ -1246,6 +1210,7 @@ select:-webkit-autofill:focus {
 
 /* OFFER END */
 
+
 /* ARCTICLE START */
 
 .news-header {
@@ -1280,13 +1245,19 @@ article p {
 .article-menu a {
   font-size: 1.6rem;
   color: #198712;
-  transition: 0.2s;
+  transition: .2s;
 }
 
 .article-menu a:hover {
   color: #10c004;
 }
 /* ARCTICLE END */
+
+
+
+
+
+
 
 /* ***********************************
 ***********************************
@@ -1306,7 +1277,12 @@ article p {
 ********************************
 */
 
+
+
+
 /* WYCENA */
+
+
 
 .wycena {
   background-image: url(../pgp-wp/assets/images/karkonosze.jpg);
@@ -1321,7 +1297,7 @@ article p {
 }
 
 .polityka {
-  transition: 0.1s;
+  transition: .1s;
 }
 .polityka:hover {
   transform: scale(1.05);
@@ -1331,93 +1307,34 @@ article p {
   color: rgb(207, 207, 207);
 }
 
-/* ***********************************
-***********************************
-***********************************
-***********************************
-***********************************
-***********************************
-***********************************
-***********************************
-***********************************
-***********************************
-***********************************
-***********************************
-***********************************
-***********************************
-***********************************
-********************************
+@media (max-width: 1024px) {
 
-
-/* KOTŁY KOTŁOSPAW */
-
-.kotlospaw {
-  position: relative;
-  background-image: url(../pgp-wp/assets/images/aerial-view-931721_1920-min.jpg);
-  background-position: center;
-  height: 300px;
-}
-
-.kotlospaw::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #010a0085;
-}
-
-.kotlospaw-slogan {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-transform: uppercase;
-  z-index: 99;
-}
-
-.kociol-desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.kociol-img img {
-  max-width: 95%;
-}
-
-@media (max-width: 992px) {
-  .kociol .kociol-desc {
-    order: 2;
-  }
-}
-.kociol:nth-of-type(even) .kociol-desc {
+.punkt2-hours {
   order: 2;
 }
 
-.kotly-contact a {
-  color: black;
-  transition: 0.15s;
 }
 
-.kotly-contact a:hover {
-  color: #14970b;
-}
 
-.kotlospaw-img2 {
-  max-width: 90%;
-}
 
-.tomiko {
-  background-image: url(../pgp-wp/assets/images/kotly/forest-931706_1920-min.jpg);
-}
 
-.tomiko-img {
-  max-width: 90%;
-}
 
-.camino {
-  background-image: url(../pgp-wp/assets/images/kotly/mountains-5237939_1920-min.jpg);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
