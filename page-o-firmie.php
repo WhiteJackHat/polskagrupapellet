@@ -166,7 +166,7 @@ Na terenie Śląska reprezentujemy firmę CAMINO oraz TOMIKO.</p>
 
     <style>
     /* ACTIVE LINK STYLE */
-    .navbar-nav li:nth-of-type(5) a {
+    .navbar-nav li:nth-of-type(6) a {
         color: rgba(255,255,255,0.95);
     }
 </style>

@@ -220,6 +220,12 @@ header .socials {
   }
 }
 
+@media (min-width: 1360px) {
+  .logo {
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 375px) and (max-width: 420px) and (min-height: 760px) {
   .navbar-toggler {
     margin-left: 1rem;
@@ -774,7 +780,7 @@ section.features {
 }
 
 .latestnew li:first-of-type {
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   font-size: 2.3rem;
   transition: 0.15s;
 }
@@ -791,9 +797,9 @@ section.features {
   width: 90%;
   margin: 0 auto;
 }
-.latestnew li:last-of-type p {
+/* .latestnew li:last-of-type p {
   max-width: 80%;
-}
+} */
 
 /* LATEST NEWS END */
 
@@ -1420,4 +1426,8 @@ article p {
 
 .camino {
   background-image: url(../pgp-wp/assets/images/kotly/mountains-5237939_1920-min.jpg);
+}
+
+.camino-img img {
+  max-width: 90%;
 }

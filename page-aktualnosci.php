@@ -42,7 +42,7 @@ if ( has_post_thumbnail() ) {
 
 ?>
 
- <li><a class="green" href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
+ <li><a class="green" href="<?php the_permalink() ?>"><?php the_title();?></a></li>
    
  
  <li><?php 

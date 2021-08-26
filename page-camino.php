@@ -17,7 +17,7 @@ get_header();
 <section class="containter my-3 px-3 px-lg-5 text-center wycena-text">
     <div data-aos="zoom-in" class="col-12">
         <h1>Polska Grupa Pellet jako autoryzowany <span class="green">sprzedawca kotłów CAMINO</span></h1>
-        <div>
+        <div class="camino-img">
             <img src="../../wp-content/themes/pgp-wp/assets/images/kotly/camino-logo.jpg" alt="Kocioł na pellet" loading="lazy">
         </div>
         <div class="col-10 m-auto">
@@ -106,7 +106,7 @@ get_header();
 
 <style>
     /* ACTIVE LINK STYLE */
-    .navbar-nav li:nth-of-type(4) a {
+    .navbar-nav li:nth-of-type(5) a {
         color: rgba(255,255,255,0.95);
     }
 </style>

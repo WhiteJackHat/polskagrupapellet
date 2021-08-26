@@ -84,7 +84,7 @@ get_header();
 </section>
 <style>
     /* ACTIVE LINK STYLE */
-    .navbar-nav li:nth-of-type(4) a {
+    .navbar-nav li:nth-of-type(5) a {
         color: rgba(255, 255, 255, 0.95);
     }
 </style>

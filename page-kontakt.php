@@ -58,7 +58,7 @@ get_header();
 <!-- MAP END -->
 <style>
     /* ACTIVE LINK STYLE */
-    .navbar-nav li:nth-of-type(6) a {
+    .navbar-nav li:nth-of-type(7) a {
         color: rgba(255, 255, 255, 0.95);
     }
 </style>

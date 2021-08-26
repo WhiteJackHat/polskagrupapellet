@@ -76,7 +76,7 @@
             </div>
 
           
-            <div class="collapse navbar-collapse col-lg-10 col-xl-8" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse col-lg-11 col-xl-9" id="navbarNavAltMarkup">
             <?php
                 wp_nav_menu(
                     array(
