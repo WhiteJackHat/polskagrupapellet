@@ -187,7 +187,7 @@ sprostać wymaganiom każdego klienta.</p>
             </div>
         </div>
 
-        <ul data-aos="zoom-in" class="row px-lg-3 justify-content-center latestnews" style="list-style:none">
+        <ul data-aos="zoom-in" class="row px-lg-5 justify-content-center latestnews" style="list-style:none">
  
  <?php 
  // Define our WP Query Parameters

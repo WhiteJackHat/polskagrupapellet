@@ -1,10 +1,19 @@
 <?php
 get_header();?>
 
+<section data-aos="fade-up" class="container-fluid kotlospaw camino realizacje">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center kotlospaw-slogan">
+                <h1 class="display-1">Nasze realizacje</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
 <div class="container ">
     <div class="row">
         <div class="col-12 my-2 text-center">
-            <h1 class="green">Nasze realizacje</h1>
             <p>To co wyróżnia nas na rynku to fachowy, solidny i estetycznie wykonany montaż. Nasze kotły zostają odpowiednio skonfigurowane i przynoszą swym właścicielom realne korzyści. Zobacz jak może to wyglądać u Ciebie:</p>
         </div>
         <div class="col-12 my-3">
